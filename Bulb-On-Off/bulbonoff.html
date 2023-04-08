@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb ON-OFF</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    <button onclick="on()" class="btn btn-dark">ON</button>
+    <img src="assets/images/pic_bulboff.gif" id="myimg" alt="">
+    <button onclick="off()" class="btn btn-dark">OFF</button>
+
+    <script>
+        function on(){
+            document.getElementById("myimg").src = "assets/images/pic_bulbon.gif"
+        }
+        function off(){
+            document.getElementById("myimg").src = "assets/images/pic_bulboff.gif"
+        }
+    </script>
+</body>
+</html>
